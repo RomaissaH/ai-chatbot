@@ -65,7 +65,7 @@ export default function Home() {
       <button onClick={handleLogout}>Logout</button>
       </>
       ):(
-      <h2>Please Login</h2>
+      <h2>Please Login!</h2>
     )}
     </div>
   )
