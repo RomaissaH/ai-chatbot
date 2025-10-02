@@ -1,0 +1,82 @@
+{
+  "login": {
+    "email": "Email",
+    "password": "Password",
+    "submit": "Login",
+    "register": "Don't have an account? Register"
+  },
+
+  "register": {
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "submit": "Register",
+    "login": "Already have an account? Login",
+    "errorPasswordMismatch": "Passwords do not match! Please try again"
+  },
+
+  "navbar": {
+    "home": "Home",
+    "login": "Log in →",
+    "register": "Register",
+    "chatbot": "Chatbot",
+    "features": "Features",
+    "about": "About"
+  },
+ 
+  "hero": {
+    "title": "AI Chatbot for English & Arabic",
+    "subtitle": "Talk with multiple AI models, store your chat history, and switch languages seamlessly",
+    "cta": "Get Started",
+    "already have an account?": "Already have an account? Log in →"
+  },
+  "features": {
+    "title1": "Our Features",
+    "feature1": { "title": "Multi-Language", "desc": "Supports English and Arabic." },
+    "feature2": { "title": "AI Models", "desc": "Interact with multiple AI models." },
+    "feature3": { "title": "History & Profile", "desc": "Save chats and generate summaries." },
+
+    
+    "title": "Core Features",
+    "subtitle": "Your AI-powered chatbot at your fingertips",
+    "description": "Interact with multiple AI models, manage chat histories, and get personalized user insights in English and Arabic.",
+    "multiModel": "Multiple AI Models",
+    "multiModelDesc": "Choose between several AI models for diverse responses and capabilities.",
+    "chatHistory": "Chat History",
+    "chatHistoryDesc": "Save and revisit your past conversations for context and continuity.",
+    "userSummaries": "AI-Generated User Summaries",
+    "userSummariesDesc": "Receive personalized summaries of interactions to enhance future chats.",
+    "bilingualSupport": "Bilingual Support",
+    "bilingualSupportDesc": "Seamlessly switch between English and Arabic, with proper RTL support for Arabic text."
+  
+  },
+  
+  "about": {
+    "title": "About Our Chatbot",
+    "subtitle": "Smart AI to enhance your interactions",
+    "description": "Our AI-powered chatbot helps users get instant responses, save chat histories, and receive personalized insights. Designed to support both English and Arabic.",
+    "privacy": {
+      "title": "Privacy First",
+      "description": "Your conversations are private and securely stored with end-to-end encryption."
+    },
+    "features": {
+      "title": "Core Features",
+      "description": "Multi-model support, AI-generated user summaries, and full bilingual support."
+    },
+    "support": {
+      "title": "Customer Support",
+      "description": "We provide reliable support and updates to ensure smooth interactions."
+    }
+  },
+
+  "footer": {
+    "rights": "All rights reserved."
+  },
+
+  "error": {
+    "password_mismatch": "Passwords do not match! Please try again.",
+    "invalid_credentials": "Invalid credentials! Check your email or password.",
+    "password_too_short": "Password must be at least 8 characters long."
+    
+  }
+}

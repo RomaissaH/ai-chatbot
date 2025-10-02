@@ -1,34 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Layout from './pages/Layout';
+import Register from './pages/Resister';  
+import Login from './pages/Login';  
+import LanguageSwitcher from './components/LanguageSwitcher'; 
+import LandingPage from './pages/LandingPage';
+import { useTranslation } from "react-i18next";
+import Navbar from './components/Navbar';
+import Hero from './components/Hero'; 
+import Nav from './components/Nav'; 
+import Features from './components/features';
+import About from './components/about';
+import Footer from './components/Footer';
 function App() {
-  const [count, setCount] = useState(0)
+  const { i18n } = useTranslation();
+  const isRtl = i18n.language === "ar";
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+   
+    <BrowserRouter>
+    
+      <Nav/>  
+      <Hero />
+      <Features />
+      <About/>
+      <Footer/>
+
+      <Routes>
+        <Route path='/' element={<Layout/>}>
+        <Route index element={<Home/>}/>
+        <Route path="login" element={<Login/>}/>
+        <Route path="register" element={<Register/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter> 
+   
   )
 }
 
