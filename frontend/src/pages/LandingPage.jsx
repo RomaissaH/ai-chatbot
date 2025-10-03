@@ -1,32 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "../components/LanguageSwitcher";  
-import Hero from "../components/Hero";  
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   const { t } = useTranslation();
-const isRtl = t("dir") === "rtl";   
+  const isRtl = t("dir") === "rtl";   
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Navigation Bar */}
-      <nav className="bg-white shadow-md">
-        <div className="container mx-auto flex justify-between items-center py-4 px-6">
-          <h1 className="text-2xl font-bold text-blue-600">AI Chatbot</h1>
-          <div className="flex items-center space-x-4">
-            <a href="/login" className="text-gray-700 hover:text-blue-600">
-              {t("nav.login")}
-            </a>
-            <a href="/register" className="text-gray-700 hover:text-blue-600">
-              {t("nav.register")}
-            </a>
-            <a href="/chat" className="text-gray-700 hover:text-blue-600">
-              {t("nav.chatbot")}
-            </a>
-            <LanguageSwitcher />
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section className="bg-blue-600 text-white py-20">
@@ -35,12 +16,12 @@ const isRtl = t("dir") === "rtl";
             {t("hero.title")}
           </h2>
           <p className={`${isRtl ? "text-right" : "text-left"} text-xl md:text-2xl mb-8`}>{t("hero.subtitle")}</p>
-          <a
-            href="/register"
-            className="bg-white text-blue-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100"
+          <Link
+            to="/register"
+            className="bg-white text-blue-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 inline-block"
           >
-            {t("hero.cta")}
-          </a>
+            {t("hero.cta", "Get Started")}
+          </Link>
         </div>
       </section>
 
@@ -72,8 +53,7 @@ const isRtl = t("dir") === "rtl";
           <p className="text-lg leading-relaxed">{t("about.desc")}</p>
         </div>
       </section>
-      <h1> Hello</h1>
-     { /*<Hero />*/}  
+  
 
     </div>
   );
