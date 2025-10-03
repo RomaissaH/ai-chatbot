@@ -1,13 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import About from "../components/about";
 
 function LandingPage() {
   const { t } = useTranslation();
   const isRtl = t("dir") === "rtl";   
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="bg-gray-50">
 
       {/* Hero Section */}
       <section className="bg-blue-600 text-white py-20">
@@ -47,16 +48,11 @@ function LandingPage() {
       </section>
 
       {/* About Section */}
-      <section className="bg-gray-100 py-20">
-        <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h3 className="text-3xl font-bold mb-6">{t("about.title")}</h3>
-          <p className="text-lg leading-relaxed">{t("about.desc")}</p>
-        </div>
-      </section>
-  
+      <About />
 
     </div>
   );
 }
 
 export default LandingPage;
+

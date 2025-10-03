@@ -1,4 +1,5 @@
 {
+  "dir": "ltr",
   "login": {
     "email": "Email",
     "password": "Password",
@@ -15,6 +16,11 @@
     "errorPasswordMismatch": "Passwords do not match! Please try again"
   },
 
+  "nav": {
+    "home": "Home",
+    "login": "Login",
+    "register": "Register"
+  },
   "navbar": {
     "home": "Home",
     "login": "Log in →",
@@ -78,5 +84,33 @@
     "invalid_credentials": "Invalid credentials! Check your email or password.",
     "password_too_short": "Password must be at least 8 characters long."
     
+  },
+  "auth": {
+    "signup": "Create your account",
+    "username": "Username",
+    "usernamePlaceholder": "Enter your username",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "submit": "Create account",
+    "loading": "Creating account...",
+    "haveAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "passwordMismatch": "Passwords do not match! Please try again.",
+    "passwordTooShort": "Password must be at least 8 characters"
+  },
+  "login": {
+    "title": "Sign in to your account",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "submit": "Sign in",
+    "loading": "Signing in...",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up"
   }
 }
